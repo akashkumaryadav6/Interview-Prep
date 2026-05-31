@@ -1,0 +1,383 @@
+1. HR + Introduction Questions
+
+These decide whether the interviewer continues comfortably or starts attacking your weak areas.
+
+Tell me about yourself.
+Walk me through your current project.
+Explain your role in your current organization.
+Why are you looking for a job change?
+Why should we hire you?
+What makes you suitable for Automation Testing?
+Difference between QA Analyst and Automation Tester?
+What challenges are you facing in your current project?
+Describe a production issue you handled.
+Describe your biggest achievement.
+Describe a conflict with developers/business users.
+Why banking domain?
+Explain your daily activities.
+What percentage of work is automation vs manual?
+What kind of applications have you tested?
+Have you worked in Agile?
+Explain your sprint lifecycle.
+How do you estimate testing effort?
+What tools are you currently using?
+Why do you want this company?
+Explain your notice period situation.
+What are your strengths and weaknesses?
+2. Python Core Questions
+
+This section destroys many automation testers because they only know Selenium syntax.
+
+Basic Python
+Difference between list, tuple, set, dictionary.
+Mutable vs immutable objects.
+What is slicing?
+Difference between append() and extend().
+What is unpacking?
+Difference between deep copy and shallow copy.
+What are lambda functions?
+What are decorators?
+What are generators?
+Difference between is and ==.
+Explain *args and **kwargs.
+What is list comprehension?
+What is exception handling?
+Difference between compile-time and runtime errors.
+Explain Python memory management.
+What are modules and packages?
+What is __init__.py?
+Explain OOP concepts in Python.
+Method overloading vs overriding.
+What is inheritance?
+Multiple inheritance in Python?
+What is polymorphism?
+Static method vs class method vs instance method.
+What is encapsulation?
+What is abstraction?
+Explain MRO (Method Resolution Order).
+Python Coding Questions
+
+These are extremely common.
+
+Reverse a string.
+Reverse a number.
+Palindrome program.
+Prime number check.
+Fibonacci series.
+Factorial.
+Armstrong number.
+Anagram check.
+Count vowels in string.
+Find duplicate characters.
+Remove duplicates from list.
+Find largest/smallest element.
+Sort list without using sort().
+Swap two numbers.
+Count frequency of characters.
+Find missing number in array.
+Merge two lists.
+Find second largest number.
+Check if number is perfect/disarium/automorphic.
+Binary to decimal conversion.
+Decimal to binary.
+String compression logic.
+Find repeated words in sentence.
+Advanced Python Questions
+Explain multithreading.
+Multithreading vs multiprocessing.
+What is GIL?
+What is concurrency?
+Async programming?
+File handling in Python.
+CSV/Excel reading.
+Logging implementation.
+Regex questions.
+JSON parsing.
+API response handling.
+Database connection using Python.
+Virtual environment.
+Pip requirements.
+Pytest fixtures.
+Parametrization in pytest.
+3. Selenium Questions
+
+This section is guaranteed.
+
+Selenium Basics
+What is Selenium?
+Selenium components?
+Why Selenium over other tools?
+Advantages and limitations of Selenium.
+Difference between Selenium RC and WebDriver.
+WebDriver architecture.
+How browser communicates with Selenium?
+Locators
+Types of locators.
+Difference between XPath and CSS Selector.
+Absolute vs relative XPath.
+Dynamic XPath.
+Write XPath for difficult elements.
+Following-sibling, ancestor, descendant usage.
+When CSS is preferred over XPath?
+Web Elements
+Difference between find_element and find_elements.
+How to handle dropdowns?
+How to handle autosuggestions?
+How to handle checkboxes/radio buttons?
+Handle hidden elements.
+Handle dynamic elements.
+Handle stale element exception.
+Handle element click intercepted exception.
+Handle NoSuchElementException.
+Difference between implicit and explicit wait.
+Fluent wait?
+Which wait do you prefer and why?
+What is synchronization issue?
+Browser Handling
+Handle multiple windows/tabs.
+Handle frames/iFrames.
+Handle alerts/popups.
+Handle file upload/download.
+Handle authentication popup.
+Execute JavaScript in Selenium.
+Scroll page.
+Screenshot capture.
+Selenium Scenarios
+How would you automate OTP-based login?
+How would you automate CAPTCHA?
+How would you handle dynamic IDs?
+How would you validate broken links?
+How would you validate UI alignment?
+How would you test pagination?
+How would you test a search feature?
+How would you automate table validation?
+How would you validate sorting functionality?
+How would you automate calendar/date picker?
+How would you handle flaky tests?
+How would you reduce execution time?
+How would you run tests in parallel?
+How would you run tests on multiple browsers?
+4. Framework Questions
+
+This is the most important section for experienced candidates.
+
+Explain your automation framework architecture.
+Did you create framework or maintain it?
+Explain folder structure.
+Explain Page Object Model.
+Why POM?
+Hybrid framework?
+Data-driven framework?
+Keyword-driven framework?
+Explain utilities/helpers.
+How do you manage test data?
+How do you manage configuration files?
+Explain logging framework.
+Explain reporting mechanism.
+Explain reusable methods.
+How do you capture screenshots on failure?
+How do you retry failed test cases?
+How do you integrate Jenkins?
+How do you execute from command line?
+Explain pytest.ini.
+Explain conftest.py.
+Explain fixtures.
+How do you generate HTML reports?
+How do you manage environment-specific execution?
+How do you run smoke/regression suites?
+Git branching strategy?
+How do you handle flaky scripts?
+5. API Testing Questions
+
+Massively important now.
+
+What is API testing?
+Difference between SOAP and REST.
+GET vs POST vs PUT vs PATCH vs DELETE.
+Status codes.
+Authentication types.
+Bearer token?
+OAuth?
+Headers and payloads.
+JSON vs XML.
+What is serialization/deserialization?
+How do you validate response?
+What tools have you used?
+How do you automate APIs using Python?
+How do you chain APIs?
+How do you validate schema?
+Difference between functional and integration API testing.
+How do you handle dynamic tokens?
+What is contract testing?
+6. SQL Questions
+
+Very common in QA interviews.
+
+Difference between WHERE and HAVING.
+JOIN types.
+Primary key vs foreign key.
+Normalize vs denormalize.
+Write query for duplicate records.
+Second highest salary query.
+Count employees department-wise.
+Delete duplicate rows.
+Difference between DELETE, DROP, TRUNCATE.
+What is indexing?
+What is a view?
+What is stored procedure?
+7. Jenkins / CI-CD Questions
+
+You already got asked pipeline questions. Expect more.
+
+What is Jenkins?
+Explain Jenkins pipeline.
+Difference between freestyle and pipeline job.
+What stages are in your pipeline?
+How do you trigger execution?
+How do you integrate Git with Jenkins?
+What happens when tests fail?
+How do you generate reports in Jenkins?
+How do you debug failed pipeline?
+Why script passes locally but fails in Jenkins?
+Environment issue handling?
+Dependency issue handling?
+Parallel execution in Jenkins?
+Headless execution?
+Docker exposure?
+GitHub webhook?
+8. Banking / SWIFT Domain Questions
+
+This is your differentiator.
+
+Most testers cannot answer domain questions properly.
+
+What is SWIFT?
+Difference between MT and MX messages.
+ISO 20022?
+What message types have you worked on?
+Explain payment lifecycle.
+What validations did you perform?
+What is UAT in banking?
+Explain sanctions screening.
+What happens if payment fails?
+Explain settlement flow.
+Explain transaction status flow.
+What are message queues?
+What production issues did you see?
+What is reconciliation?
+What is STP (Straight Through Processing)?
+Explain cross-border payments.
+Difference between SWIFT MT103 and MT202.
+What is CBPR+?
+How did you validate XML messages?
+9. Scenario-Based Questions
+
+These are the real elimination questions.
+
+Test case is failing intermittently. What will you do?
+Dev says issue is not reproducible. What will you do?
+Requirement changes during sprint. How do you handle it?
+You have limited time. What will you prioritize?
+Smoke passes but regression fails. What next?
+Production defect found after release. What steps?
+Automation script unstable only in CI environment.
+API works manually but fails in automation.
+Element works locally but not in Jenkins.
+Business says expected result changed.
+Test data unavailable.
+Application response slow.
+Random popup appears.
+Test passes individually but fails in suite execution.
+Parallel execution causing failures.
+Database values mismatch.
+User story unclear.
+Requirement document missing.
+High severity defect near release date.
+10. Manual Testing Questions
+
+Do not underestimate this section.
+
+SDLC vs STLC.
+Severity vs priority.
+Defect lifecycle.
+Bug leakage vs bug release.
+Regression vs retesting.
+Smoke vs sanity.
+Test plan vs test strategy.
+Functional vs non-functional testing.
+Black box vs white box.
+Boundary value analysis.
+Equivalence partitioning.
+Exploratory testing.
+Risk-based testing.
+Agile testing principles.
+Entry and exit criteria.
+Traceability matrix.
+Defect report contents.
+11. Git Questions
+Difference between clone and fork.
+Difference between fetch and pull.
+Rebase vs merge.
+Cherry-pick?
+Resolve merge conflict.
+Git stash.
+Git revert vs reset.
+Branching strategy.
+Pull request process.
+12. Real Project Deep-Dive Questions
+
+These decide seniority.
+
+Show me one automation flow you designed.
+Explain your hardest bug.
+Explain one failed release.
+Explain one production issue.
+Explain your regression strategy.
+How do you select automation candidates?
+Which tests should NOT be automated?
+How do you measure automation success?
+How do you reduce maintenance cost?
+How do you improve execution speed?
+How do you maintain test stability?
+What improvements did you personally introduce?
+What bottlenecks existed in your project?
+How do you communicate with business teams?
+How do you prepare solution documents?
+13. Questions They Ask to Expose Fake Experience
+
+Very important.
+
+If you cannot answer these naturally, interviewer will know instantly.
+
+Show framework flow step by step.
+Where exactly are locators stored?
+What is inside conftest.py?
+How are fixtures triggered?
+How are reports generated?
+How do retries work internally?
+How are screenshots attached?
+Explain one Jenkinsfile.
+Explain exact Git flow in your project.
+Show one XPath you wrote recently.
+Explain one SQL query you used recently.
+Explain one real defect you found.
+What exactly did YOU do personally?
+14. Questions You Should Prepare Extra Hard
+
+These are the highest probability based on your profile.
+
+Python OOP
+Pytest framework
+Selenium waits
+Dynamic XPath
+Jenkins pipeline failures
+API automation
+SQL joins
+SWIFT MT vs MX
+Regression strategy
+Production support scenarios
+Framework architecture
+Exception handling
+Logging/reporting
+Parallel execution
+Real-time debugging scenarios
