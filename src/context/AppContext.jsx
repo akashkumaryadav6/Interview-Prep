@@ -1,14 +1,44 @@
-import { createContext, useContext, useState, useCallback } from 'react'
+import { createContext, useContext, useState, useCallback, useEffect } from 'react'
 
+const STORAGE_KEY = 'ip-app-state'
 const AppContext = createContext(null)
 
+function loadAppState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    return raw ? JSON.parse(raw) : null
+  } catch {
+    return null
+  }
+}
+
 export function AppProvider({ children }) {
-  const [activeSection, setActiveSection] = useState('hr')
-  const [searchQuery, setSearchQuery]     = useState('')
-  const [activeView, setActiveView]       = useState('landing')
-  const [filterPriority, setFilterPriority] = useState('all')
-  const [filterDifficulty, setFilterDifficulty] = useState('all')
-  const [sidebarOpen, setSidebarOpen]     = useState(false)
+  const persisted = loadAppState()
+
+  const [activeSection, setActiveSection] = useState(persisted?.activeSection ?? 'hr')
+  const [searchQuery, setSearchQuery]     = useState(persisted?.searchQuery ?? '')
+  const [activeView, setActiveView]       = useState(persisted?.activeView ?? 'landing')
+  const [filterPriority, setFilterPriority] = useState(persisted?.filterPriority ?? 'all')
+  const [filterDifficulty, setFilterDifficulty] = useState(persisted?.filterDifficulty ?? 'all')
+  const [sidebarOpen, setSidebarOpen]     = useState(persisted?.sidebarOpen ?? false)
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({
+          activeSection,
+          searchQuery,
+          activeView,
+          filterPriority,
+          filterDifficulty,
+          sidebarOpen,
+        })
+      )
+    } catch {
+      // ignore write failures
+    }
+  }, [activeSection, searchQuery, activeView, filterPriority, filterDifficulty, sidebarOpen])
 
   const closeSidebar = useCallback(() => setSidebarOpen(false), [])
   const toggleSidebar = useCallback(() => setSidebarOpen(prev => !prev), [])
