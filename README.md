@@ -1,44 +1,36 @@
 # Interview Prep
 
-A lightweight single-page React app for browsing and practicing technical interview questions.
+A lightweight single-page React app for browsing, studying, and practicing technical interview questions.
 
-## Features
-- Browse curated interview questions organized by sections
-- Search and filter questions
-- Code examples with syntax highlighting
-- Bookmark questions and track progress
-- Clean layout with sidebar navigation
+## Quick overview
 
-## Tech Stack
+- Browse curated interview questions organized by sections.
+- Search, filter, and bookmark items to track your progress.
+- Inline code examples with syntax highlighting and source attribution.
+
+## Tech stack
+
 - React 18
-- Vite (development/build)
+- Vite (dev + build)
 - lucide-react (icons)
 
-## Project Structure (important files)
-- `src/components` — UI components and layout
-- `src/data` — question datasets and sources
-- `src/context` — app state providers
-- `src/pages` — top-level pages (LandingPage)
-- `src/hooks` — custom React hooks
-- `src/utils` — helpers and formatting utilities
+## Quick start
 
-## Setup & Local Development
-1. Install dependencies:
+Prerequisites: Node.js (16+) and npm.
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Start the dev server:
+Start development server:
 
 ```bash
 npm run dev
 ```
 
-Open the URL printed by Vite (usually `http://localhost:5173`).
-
-## Build & Preview
-Build the production bundle:
+Build production bundle:
 
 ```bash
 npm run build
@@ -50,8 +42,24 @@ Preview the production build locally:
 npm run preview
 ```
 
-## Contributing
-Contributions welcome — open an issue or submit a pull request. Keep changes focused and add/update tests/data where appropriate.
+## Project structure (key files)
 
-## Notes
-- This project does not include a LICENSE file. Add one if you plan to publish or share.
+- `src/main.jsx` — app bootstrap and React root ([src/main.jsx](src/main.jsx#L1)).
+- `src/components/layout/Layout.jsx` — main layout and sidebar ([src/components/layout/Layout.jsx](src/components/layout/Layout.jsx#L1)).
+- `src/pages/LandingPage.jsx` — top-level entry page ([src/pages/LandingPage.jsx](src/pages/LandingPage.jsx#L1)).
+- `src/data/index.js` — consolidated question data and exports ([src/data/index.js](src/data/index.js#L1)).
+- `src/context/AppContext.jsx` — app state and bookmarks ([src/context/AppContext.jsx](src/context/AppContext.jsx#L1)).
+
+## Development notes
+
+- UI components live under `src/components` and are organized by feature (layout, question views, ui primitives).
+- Question datasets are in `src/data` — each section has its own file (e.g., `javascriptQuestions.js`).
+- Custom hooks are in `src/hooks` (search, bookmarks, progress tracking).
+
+## Contributing
+
+Issues and PRs are welcome. Keep changes focused, include data updates or tests where applicable, and describe the motivation.
+
+## License
+
+No license file is included in this repository. Add `LICENSE` if you plan to publish or share this project.
