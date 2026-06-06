@@ -43,7 +43,18 @@ export function AppHeader({ sectionColor = '#6366f1', showMenu = true }) {
               boxShadow: `0 2px 12px ${sectionColor}44`,
             }}
           >
-            PF
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 128 128"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M38 42h18a8 8 0 0 1 8 8v30a8 8 0 0 1-8 8H38a8 8 0 0 1-8-8V50a8 8 0 0 1 8-8zm18 9H42v31h14V51zm27-9h18a8 8 0 0 1 8 8v30a8 8 0 0 1-8 8H65a8 8 0 0 1-8-8V50a8 8 0 0 1 8-8zm18 9H69v31h14V51z"
+                fill="#fff"
+              />
+            </svg>
           </div>
           <span
             className="app-header__title"
