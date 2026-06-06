@@ -13,6 +13,9 @@ import { gitSection }         from './git'
 import { deepdiveSection }    from './deepdive'
 import { fakecheckSection }   from './fakecheck'
 import { highprioritySection } from './highpriority'
+import { javaSection }        from './java'
+import { javascriptSection }  from './javascript'
+import { springbootSection }  from './springboot'
 
 const rawSections = [
   hrSection,
@@ -29,6 +32,9 @@ const rawSections = [
   deepdiveSection,
   fakecheckSection,
   highprioritySection,
+  javaSection,
+  javascriptSection,
+  springbootSection,
 ]
 
 export const allSections = rawSections.map(applySectionColors)

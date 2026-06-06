@@ -9,10 +9,14 @@ export function SearchBar({ accentColor = '#6366f1' }) {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      triggerSearch(localQuery)
+      // Only trigger search when the local query actually differs
+      // from the shared searchQuery to avoid flipping views on mount.
+      if (localQuery !== searchQuery) {
+        triggerSearch(localQuery)
+      }
     }, 300)
     return () => clearTimeout(timer)
-  }, [localQuery])
+  }, [localQuery, searchQuery, triggerSearch])
 
   useEffect(() => {
     if (!searchQuery) setLocalQuery('')

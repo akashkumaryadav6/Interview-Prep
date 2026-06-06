@@ -664,6 +664,9 @@ button:focus-visible {
   letter-spacing: 0.01em;
   color: var(--text-secondary);
   margin: 0;
+  /* Ensure long words or example lines wrap instead of overflowing */
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .answer-example {
@@ -672,6 +675,8 @@ button:focus-visible {
   border-left: 2px solid color-mix(in srgb, var(--section-accent, var(--accent)) 40%, transparent);
   padding-left: 14px;
   margin-left: 2px;
+  /* Allow example text to wrap cleanly */
+  white-space: normal;
 }
 
 .answer-example__label {
@@ -690,7 +695,10 @@ button:focus-visible {
   background: var(--code-inline-bg);
   padding: 0.1em 0.35em;
   border-radius: 4px;
-  white-space: nowrap;
+  /* Allow long inline code or quoted examples to wrap instead of overflowing */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .search-highlight {

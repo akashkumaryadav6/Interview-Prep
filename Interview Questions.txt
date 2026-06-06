@@ -381,3 +381,206 @@ Exception handling
 Logging/reporting
 Parallel execution
 Real-time debugging scenarios
+
+15: JAVA
+===============================================================================
+--- BASIC ---
+1. What is Java, and how do the JDK, JRE, and JVM differ?
+2. What is the difference between primitive types and reference types?
+3. What is a class, and what is an object?
+4. What are the four main principles of object-oriented programming?
+5. What is the difference between a constructor and a method?
+6. What do public, protected, package-private, and private mean in Java?
+7. What is the difference between an instance member and a static member?
+8. What is method overloading, and how is it different from method overriding?
+9. What is inheritance, and why does Java not support multiple inheritance of classes?
+10. What is the difference between an interface and an abstract class?
+11. What is the difference between == and equals() when comparing objects?
+12. Why is String immutable in Java?
+13. How do String, StringBuilder, and StringBuffer differ?
+14. What is an exception, and how do checked and unchecked exceptions differ?
+15. What is the purpose of the final keyword when applied to a variable, method, or class?
+--- INTERMEDIATE ---
+16. What contract must equals() and hashCode() satisfy?
+17. How do List, Set, Queue, and Map differ?
+18. When would you choose ArrayList over LinkedList, or vice versa?
+19. How does HashMap store and retrieve entries, and how are hash collisions handled?
+20. How do HashMap, LinkedHashMap, TreeMap, and ConcurrentHashMap differ?
+21. What are generics, and what problems does type erasure create?
+22. Explain the difference between <? extends T> and <? super T>.
+23. What is the difference between Comparable and Comparator?
+24. What are lambda expressions and functional interfaces?
+25. How do intermediate and terminal Stream operations differ?
+26. Why are Java streams lazy, and why should a stream normally be used only once?
+27. What is the difference between map() and flatMap()?
+28. What is Optional intended for, and when should it not be used?
+29. How do orElse() and orElseGet() differ?
+30. Explain thread states and the difference between start() and run().
+31. How do synchronized, volatile, and atomic classes solve different concurrency problems?
+32. What is the difference between Runnable, Callable, Future, and CompletableFuture?
+33. How does try-with-resources work, and what is the role of AutoCloseable?
+34. What is the difference between shallow copying and deep copying?
+35. What are records and sealed classes, and when are they useful?
+--- CHALLENGING ---
+36. Explain the Java Memory Model's happens-before relationship and its practical importance.
+37. Why does volatile provide visibility but not make compound operations atomic?
+38. Describe a deadlock, livelock, and starvation. How would you diagnose and prevent each?
+39. How does ConcurrentHashMap support concurrency, and why is it preferable to synchronizing a HashMap?
+40. What makes a Stream reduction safe or unsafe for parallel execution?
+41. When can parallel streams reduce performance or produce incorrect results?
+42. Explain covariance, contravariance, invariance, and PECS in the context of Java generics.
+43. What are bridge methods, and why can type erasure cause the compiler to generate them?
+44. How does class loading work through loading, linking, initialization, and parent delegation?
+45. What types of references can prevent or permit garbage collection, and how do strong, soft, weak, and phantom references differ?
+46. How would you investigate a Java memory leak, high garbage-collection pause time, or OutOfMemoryError?
+47. What is escape analysis, and how can the JIT compiler use it to optimize allocation and locking?
+48. Compare platform threads and virtual threads. Which workloads benefit from virtual threads?
+49. Why is pinning important with virtual threads, and how would you detect or reduce it?
+50. How would you design an immutable, thread-safe class whose fields include mutable collections?
+51. Explain optimistic and pessimistic concurrency strategies and when each is appropriate.
+52. How would you implement a bounded producer-consumer system with backpressure and graceful shutdown?
+53. What can go wrong when CompletableFuture stages use the common ForkJoinPool for blocking work?
+54. How would you preserve exception context and cancellation across a multi-stage asynchronous workflow?
+55. Design an in-memory, thread-safe cache with expiration. What correctness and performance trade-offs would you consider?
+Java source material:
+- https://docs.oracle.com/javase/tutorial/java/concepts/
+- https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collections.html
+- https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html
+- https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html
+- https://dev.java/learn/
+===============================================================================
+16 : JAVASCRIPT
+===============================================================================
+--- BASIC ---
+1. What is JavaScript, and how does it differ from Java?
+2. What primitive data types does JavaScript provide?
+3. How do var, let, and const differ in scope, initialization, and reassignment?
+4. What is the difference between null and undefined?
+5. What is the difference between == and ===?
+6. What values are falsy in JavaScript?
+7. What is type coercion? Give examples of implicit and explicit coercion.
+8. What is the difference between a function declaration and a function expression?
+9. How do arrow functions differ from regular functions?
+10. What is an object, and how can its properties be read, added, changed, and deleted?
+11. How do arrays differ from ordinary objects?
+12. What do map(), filter(), reduce(), find(), and forEach() do?
+13. What is destructuring, and how does it work with arrays and objects?
+14. What do the spread and rest syntaxes do?
+15. What is the difference between synchronous and asynchronous code?
+
+-- INTERMEDIATE ---
+16. What is lexical scope?
+17. What is a closure, and what are practical uses for closures?
+18. What is hoisting, and how does it affect var, let, const, functions, and classes?
+19. What is the temporal dead zone?
+20. How is this determined in a regular function, method, constructor, and arrow function?
+21. What do call(), apply(), and bind() do?
+22. How does prototype-based inheritance work?
+23. How is class syntax related to JavaScript's prototype system?
+24. What is the difference between own and inherited properties?
+25. How do Object.freeze(), Object.seal(), and const differ?
+26. What are shallow copies, and why do spread syntax and Object.assign() not perform deep cloning?
+27. What is a Promise, and what are its pending, fulfilled, and rejected states?
+28. How do Promise.all(), allSettled(), race(), and any() differ?
+29. How are async and await related to promises?
+30. How does error propagation differ between synchronous code, promise chains, and async functions?
+31. What are ES modules, and how do named and default exports differ?
+32. What is event delegation, and when is it useful in browser applications?
+33. What is the difference between debouncing and throttling?
+34. What are iterators and generators?
+35. How do Map and Set differ from Object and Array for common lookup and uniqueness tasks?
+--- CHALLENGING ---
+36. Explain the call stack, job queues, and the event loop.
+37. What is the ordering relationship among synchronous code, promise jobs, queueMicrotask(), and timers?
+38. Predict and explain the output of code that mixes Promise.then(), async/await, and setTimeout().
+39. Why can a long-running JavaScript callback make an application unresponsive even though asynchronous APIs are used?
+40. How do closures accidentally retain memory, and how would you investigate such a leak?
+41. Explain property descriptors and the differences among writable, enumerable, and configurable.
+42. How do getters, setters, Proxy, and Reflect differ as metaprogramming tools?
+43. Explain the prototype lookup algorithm and the effects of changing an object's prototype at runtime.
+44. What is the difference between SameValue, SameValueZero, strict equality, and loose equality?
+45. Why can instanceof fail across realms, and when is Array.isArray() safer?
+46. What are common problems with floating-point arithmetic, and how would you handle money accurately?
+47. How do AbortController and AbortSignal support cancellation in asynchronous workflows?
+48. How would you limit concurrency when processing thousands of promise-returning tasks?
+49. How would you implement retries with exponential backoff, jitter, cancellation, and a maximum attempt limit?
+50. What race conditions can occur in a single-threaded JavaScript application?
+51. How do Web Workers or worker threads change JavaScript's concurrency model?
+52. What are SharedArrayBuffer and Atomics, and what risks arise when sharing memory?
+53. How do circular ES module dependencies behave, and how can initialization order cause failures?
+54. How would you design a deep-clone utility, and which values make general-purpose cloning difficult?
+55. Design a cache for asynchronous requests that deduplicates in-flight work, expires results, and avoids caching failures.
+JavaScript source material:
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
+===============================================================================
+17: SPRING BOOT
+===============================================================================
+--- BASIC ---
+1. What is Spring Boot, and what problems does it solve compared with manual Spring configuration?
+2. What does @SpringBootApplication combine?
+3. What is dependency injection, and why is constructor injection usually preferred?
+4. What is a Spring bean?
+5. What are @Component, @Service, @Repository, and @Controller used for?
+6. What is the difference between @Controller and @RestController?
+7. What is component scanning, and how does package placement affect it?
+8. What are Spring Boot starters?
+9. What is auto-configuration?
+10. How do application.properties and application.yml differ?
+11. What are Spring profiles, and how are they activated?
+12. How do @Value and @ConfigurationProperties differ?
+13. How do @RequestMapping, @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping work?
+14. What is the difference between @PathVariable, @RequestParam, and @RequestBody?
+15. How do you change the application port and provide environment-specific configuration?
+--- INTERMEDIATE ---
+16. How does Spring Boot decide which auto-configurations to apply?
+17. What roles do @ConditionalOnClass, @ConditionalOnMissingBean, and related conditional annotations play?
+18. How can an application override or exclude an auto-configuration?
+19. What is the difference between @Bean and component scanning?
+20. What are bean scopes, and when would singleton, prototype, request, or session scope be appropriate?
+21. What is the bean lifecycle, and where do @PostConstruct and @PreDestroy fit?
+22. What causes circular dependencies, and why does constructor injection reveal them early?
+23. How does externalized configuration precedence work?
+24. How do validation annotations work with request models and @ConfigurationProperties?
+25. How would you implement consistent REST error responses with @ControllerAdvice and @ExceptionHandler?
+26. What is Spring Data JPA, and how are repository implementations generated?
+27. What is the difference between lazy and eager fetching, and what is the N+1 query problem?
+28. What does @Transactional do, and why can self-invocation prevent it from working as expected?
+29. What is the difference between unit tests, slice tests, and @SpringBootTest integration tests?
+30. When would you use @WebMvcTest, @DataJpaTest, MockMvc, or Testcontainers?
+31. What does Spring Boot Actuator provide?
+32. How should Actuator endpoints be exposed and secured?
+33. How is security auto-configuration changed when a custom SecurityFilterChain bean is declared?
+34. How do servlet-based Spring MVC and reactive Spring WebFlux differ?
+35. How do executable JAR files work, and how are they typically built with Maven or Gradle?
+--- CHALLENGING ---
+36. Trace the startup process from SpringApplication.run() to creation of the application context and singleton beans.
+37. How are auto-configuration candidates discovered in current Spring Boot versions?
+38. How would you design and package a reusable custom auto-configuration and starter?
+39. How do you make a custom auto-configuration back off cleanly when an application supplies its own bean?
+40. How would you debug why an expected auto-configuration or bean was not created?
+41. Explain transaction propagation and isolation. Which combinations can create unexpected behavior?
+42. Why might @Transactional fail on private methods, final methods, or self-invocation in proxy-based configurations?
+43. How would you prevent lost updates in a concurrent REST API using optimistic locking?
+44. How would you diagnose connection-pool exhaustion, slow database calls, and thread-pool saturation?
+45. How would you design idempotent POST processing for requests that may be retried?
+46. How would you coordinate database changes and message publication without relying on a distributed transaction?
+47. What is the transactional outbox pattern, and what failure modes must its publisher handle?
+48. How would you implement graceful shutdown while allowing in-flight requests and message handlers to finish?
+49. How would you structure liveness, readiness, startup, and dependency health checks?
+50. How would you add metrics, traces, structured logs, and correlation IDs across service boundaries?
+51. How do you secure Actuator, management, and application endpoints when they use separate ports or networks?
+52. How would you test an application against real database and message-broker behavior while keeping tests repeatable?
+53. When should an application use asynchronous methods, scheduled jobs, messaging, or reactive processing?
+54. How would you diagnose a memory leak caused by application-context references, caches, listeners, or thread-local state?
+55. Design a resilient Spring Boot service that calls an unreliable downstream API. Address timeouts, bounded retries, backoff, circuit breaking, bulkheads, observability, and fallback behavior.
+Spring Boot source material:
+- https://docs.spring.io/spring-boot/reference/
+- https://docs.spring.io/spring-boot/reference/using/build-systems.html
+- https://docs.spring.io/spring-boot/reference/features/developing-auto-configuration.html
+- https://docs.spring.io/spring-boot/reference/testing/index.html
+- https://docs.spring.io/spring-boot/reference/actuator/endpoints.html
+- https://docs.spring.io/spring-boot/how-to/properties-and-configuration.html
